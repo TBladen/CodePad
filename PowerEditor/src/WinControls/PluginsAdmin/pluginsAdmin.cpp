@@ -41,6 +41,8 @@
 #include "PluginsManager.h"
 #include "md5.h"
 
+#pragma warning(disable: 4267)
+
 using namespace std;
 using nlohmann::json;
 
@@ -1014,3 +1016,4 @@ INT_PTR CALLBACK PluginsAdminDlg::run_dlgProc(UINT message, WPARAM wParam, LPARA
 	return FALSE;
 }
 
+#pragma warning(default: 4267)
